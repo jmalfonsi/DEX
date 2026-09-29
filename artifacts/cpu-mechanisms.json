@@ -1,0 +1,77 @@
+{
+  "status": "untrained_synthetic_only",
+  "platform": "Linux-6.8.0-101-generic-x86_64-with-glibc2.39",
+  "torch": "2.11.0+cpu",
+  "threads": 4,
+  "numpy": "2.4.2",
+  "cases": [
+    {
+      "name": "concentrated",
+      "chunks": 128,
+      "options": 10000,
+      "rank": 32,
+      "chunks_refined": 64,
+      "options_refined": 0,
+      "rounds": 1,
+      "scheduler_ms": 8.135676383972168,
+      "selected_p": 0.9999982119630365,
+      "full_p": 0.9999993475231502,
+      "interval": [
+        0.9999867682103363,
+        0.9999997583815493
+      ],
+      "same_argmax": true,
+      "error": 1.1355601137186255e-06
+    },
+    {
+      "name": "diffuse",
+      "chunks": 128,
+      "options": 10000,
+      "rank": 32,
+      "chunks_refined": 128,
+      "options_refined": 5056,
+      "rounds": 81,
+      "scheduler_ms": 370.36580219864845,
+      "selected_p": 0.4248957331589151,
+      "full_p": 0.4240297073345424,
+      "interval": [
+        0.4178367675114001,
+        0.4275529977237854
+      ],
+      "same_argmax": true,
+      "error": 0.0008660258243726737
+    },
+    {
+      "name": "ambiguous",
+      "chunks": 128,
+      "options": 10000,
+      "rank": 32,
+      "chunks_refined": 128,
+      "options_refined": 64,
+      "rounds": 3,
+      "scheduler_ms": 17.59585738182068,
+      "selected_p": 0.0009535660240541356,
+      "full_p": 0.0007849219092387617,
+      "interval": [
+        0.0003559506622944984,
+        0.002493914105335251
+      ],
+      "same_argmax": true,
+      "error": 0.00016864411481537392
+    }
+  ],
+  "parameters": 28396162,
+  "fp32_weights_mib": 108.32276153564453,
+  "ideal_int8_weights_mib_excluding_scales": 27.080690383911133,
+  "encoder_512_tokens_cpu_fp32_ms": {
+    "samples": [
+      106.85163363814354,
+      106.12901672720909,
+      108.17468538880348,
+      105.8724857866764,
+      115.09687453508377
+    ],
+    "median": 106.85163363814354,
+    "note": "5 observations; not a reliable p95"
+  }
+}

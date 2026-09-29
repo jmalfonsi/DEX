@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dex-decision-research"
+version = "0.1.0"
+description = "DEX: bounded residual decision model, research reference"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "torch>=2.2"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+export = ["onnx>=1.16", "onnxruntime>=1.20"]
+
+[tool.setuptools.packages.find]
+include = ["dex*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

@@ -1,0 +1,26 @@
+{
+  "status": "random_weights_untrained_uncalibrated",
+  "seed": 29,
+  "config": {
+    "vocab": 32768,
+    "width": 384,
+    "depth": 8,
+    "heads": 6,
+    "ff": 1152,
+    "window": 128,
+    "rank": 128,
+    "rho": 1.0,
+    "option_bound": 1.0,
+    "scale": 8.0
+  },
+  "parameters": 28396162,
+  "onnx": "1.23.0",
+  "onnxruntime": "1.30.0",
+  "quantization": "weight-only int8 QDQ, float32 activations; not int8 compute",
+  "core_max_abs_error": 1.6689300537109375e-06,
+  "encoder_quantization_max_abs_error": 0.029803067445755005,
+  "files": {
+    "encoder.int8.onnx": 28234224,
+    "core.fp32.onnx": 1340565
+  }
+}

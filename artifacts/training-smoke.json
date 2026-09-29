@@ -1,0 +1,7 @@
+{
+  "status": "single_batch_overfit_smoke_only",
+  "steps": 80,
+  "initial_loss": 1.6506359577178955,
+  "final_loss": 5.06639196373726e-07,
+  "no_semantic_or_generalization_claim": true
+}

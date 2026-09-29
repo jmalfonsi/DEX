@@ -1,0 +1,53 @@
+{
+  "host": "Xeon D-1521, headless Chromium, GPU disabled",
+  "numeric": {
+    "status": "synthetic_uncalibrated",
+    "options": 1024,
+    "chunks": 64,
+    "scheduler_ms": 16.60000228881836,
+    "selected": 0,
+    "approximate_probability": 0.9999897875937891,
+    "full_probability": 0.9999941253193411,
+    "probability_interval": [
+      0.999924544865749,
+      0.9999986178891861
+    ],
+    "contains_reference": true,
+    "argmax_certified": true,
+    "chunks_refined": 64,
+    "options_refined": 0,
+    "rounds": 1
+  },
+  "neural": {
+    "status": "random_weights_untrained_uncalibrated",
+    "backend": "WASM CPU 1 thread",
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "cross_origin_isolated": false,
+    "parameters": 28396162,
+    "model_bytes": 29641112,
+    "context_tokens": 512,
+    "fields": 4,
+    "options": 32,
+    "session_load_ms": 909.7000007629395,
+    "schema_compile_ms": 1386.3999977111816,
+    "encoder_ms": [
+      570.1000022888184,
+      574.2999992370605,
+      572.2999992370605,
+      564.4000015258789,
+      563.2000007629395
+    ],
+    "core_ms": [
+      3.200000762939453,
+      3.0999984741210938,
+      2.700000762939453,
+      2.799999237060547,
+      2.8999977111816406
+    ],
+    "encoder_median_ms": 570.1000022888184,
+    "core_median_ms": 2.8999977111816406,
+    "max_abs_error_vs_onnx_cpu": 0.009125173091888428,
+    "parity_passed": false,
+    "note": "5 observations; no reliable p95. Excludes download, tokenization, calibration and adaptive scheduler."
+  }
+}

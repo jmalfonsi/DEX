@@ -1,0 +1,32 @@
+{
+  "status": "proposed_not_launched",
+  "model": "DEX-28M-v0.1",
+  "seed": 29,
+  "model_config": {
+    "vocab": 32768, "width": 384, "depth": 8, "heads": 6,
+    "ff": 1152, "window": 128, "rank": 128,
+    "rho": 1.0, "option_bound": 1.0, "scale": 8.0
+  },
+  "languages": {"fr": 0.5, "en": 0.5},
+  "initial_pilot": {
+    "decisions_min": 50000,
+    "decisions_max": 200000,
+    "dense_training_first": true,
+    "objective": "full_categorical_log_score",
+    "test_split_unit": "source_situation_and_schema_family"
+  },
+  "calibration": {
+    "after_quantization": true,
+    "fit_and_test_disjoint": true,
+    "selected_probability_absolute_tolerance": 0.01,
+    "target_ece": 0.03,
+    "target_selective_risk": 0.02,
+    "target_coverage": 0.7
+  },
+  "modal": {
+    "job_created": false,
+    "gpu_type": null,
+    "budget": null,
+    "reason": "Choose after pilot throughput, memory and dataset validation."
+  }
+}
